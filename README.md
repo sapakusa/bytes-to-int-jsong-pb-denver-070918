@@ -31,7 +31,7 @@ You can do the reverse by using bytes:
 print(bytes([38])) # b'&'
 ```
 
-### Let's try it
+### Try it
 
 
 ```python
@@ -58,7 +58,7 @@ print(b'hello world'.hex())
 print(bytes.fromhex('68656c6c6f20776f726c64'))
 ```
 
-### Let's try it
+### Try it
 
 Reverse this hex dump: `b010a49c82b4bc84cc1dfd6e09b2b8114d016041efaf591eca88959e327dd29a`
 
@@ -117,7 +117,7 @@ print(int.from_bytes(big_endian, 'big'))
 print(int.from_bytes(little_endian, 'little'))
 ```
 
-### Test Driven Exercise
+### Try it
 
 Convert the following:
 
@@ -131,7 +131,14 @@ n = 8675309
 
 little_endian = b'\x11\x22\x33\x44\x55'
 # print little endian in decimal
+```
 
+### Test Driven Exercise
+
+Add `little_endian_to_int()` and `int_to_little_endian()` methods to your library.
+
+
+```python
 def little_endian_to_int(b):
     '''little_endian_to_int takes byte sequence as a little-endian number.
     Returns an integer'''
